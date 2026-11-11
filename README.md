@@ -11,6 +11,22 @@ Jednoduchý přijímač FM stanic řízený mikrokontrolérem RPi Pico W
 - [I/O sekce](#IO-sekce)
 - [Použité zdroje](#Použité-zdroje)
 
+## Hardware
+
+Rotační enkodér:
+Okystar KY-040
+https://botland.store/encoders/16558-rotation-sensor-encoder-20-pulses-okystar-ky-040-5904422366278.html
+
+FM tuner:
+Si4703
+https://www.pololu.com/product/1647
+
+LCD displej:
+Nokia5110
+https://www.hadex.cz/p/m507a-displej-lcd-84x48-znaku-nokia5110-modre-podsviceni-cervena-dps?hgtid=c521c699-b283-4806-b29b-63bd0b512dd7
+
+Raspberry Pi Pico W
+
 ## Základní popis fungování
 
 ## I/O sekce
