@@ -8,12 +8,18 @@ Jednoduchý přijímač FM stanic řízený mikrokontrolérem RPi Pico W
 
 ## Obsah
 - [Základní popis fungování](#Základní-popis-fungování)
+- [Blokové schéma](#Blokové-schéma)
 - [Schéma](#Schéma)
 - [I/O sekce](#IO-sekce)
 - [Použité zdroje](#Použité-zdroje)
 
+## Blokové schéma
+![Image of diagram](https://github.com/M1chael02/DE2_Projekt-FM_Receiver/blob/main/images/blok_FM.png)
+
 ## Schéma
 ![Image of schematic](https://github.com/M1chael02/DE2_Projekt-FM_Receiver/blob/main/images/schematic.png)
+
+
 ## Hardware
 
 Rotační enkodér:
