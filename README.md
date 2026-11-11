@@ -32,3 +32,6 @@ Raspberry Pi Pico W
 ## I/O sekce
 
 ## Použité zdroje
+https://cdn.shopify.com/s/files/1/0672/9409/files/ky-040-rotary-encoder-datasheet-and-tutorial.pdf
+https://www.alldatasheet.net/datasheet-pdf/pdf/18170/PHILIPS/PCD8544.html
+https://www.kutilovo.cz/shop/files/21911.pdf
