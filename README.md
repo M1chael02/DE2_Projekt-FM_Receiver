@@ -2,9 +2,9 @@
 Jednoduchý přijímač FM stanic řízený mikrokontrolérem RPi Pico W
 
 ## Členové týmu
-- Marek Hostášek
-- Michael Jurča
-- Denis Kaňovský
+- Marek Hostášek - SPI Displej 
+- Michael Jurča - FM Tuner
+- Denis Kaňovský - Integrace rotačního enkodéru
 
 ## Obsah
 - [Základní popis fungování](#Základní-popis-fungování)
