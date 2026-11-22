@@ -1,5 +1,5 @@
 # DE2_Projekt-FM_Receiver
-Jednoduchý přijímač FM stanic řízený mikrokontrolérem RPi Pico W
+Jedná se o frekvenčně modulovaný (FM) rozhlasový přijímač, pracující na velmi krátkých vlnách (VKV). Je přeladitelný v celém pásmu CCIR (západní norma) 87,5 MHz až 108 MHz. Disponuje systémem doplňkových informací RDS (Radio Data System). K řízení je použitý jednodeskové počítač Raspberry Pi Pico.
 
 ## Členové týmu
 - Marek Hostášek - SPI Displej 
