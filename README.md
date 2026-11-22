@@ -7,10 +7,12 @@ Jednoduchý přijímač FM stanic řízený mikrokontrolérem RPi Pico W
 - Denis Kaňovský - Integrace rotačního enkodéru
 
 ## Obsah
-- [Základní popis fungování](#Základní-popis-fungování)
 - [Blokové schéma](#Blokové-schéma)
 - [Schéma](#Schéma)
+- [Hardware](#Hardware)
+- [Základní popis fungování](#Základní-popis-fungování)
 - [I/O sekce](#IO-sekce)
+- [Použité knihovny](#Použité-knihovny)
 - [Použité zdroje](#Použité-zdroje)
 
 ## Blokové schéma
@@ -23,7 +25,7 @@ Jednoduchý přijímač FM stanic řízený mikrokontrolérem RPi Pico W
 ## Hardware
 
 | Součástka | Model | Odkazy |
-|:-----:|-----| :---: |
+| :-----:|-----| :---: |
 | Mikrokontrolér | Raspberry Pi Pico W | [Odkaz na datasheet](https://pip-assets.raspberrypi.com/categories/686-raspberry-pi-pico-w/documents/RP-008312-DS-3-pico-w-datasheet.pdf) |
 | Rotační enkodér | Okystar KY-040 | [Odkaz na datasheet](https://okystar.com/wp-content/uploads/2017/08/OKY3431.pdf) |
 | FM tuner | Si4703 | [Odkaz na datasheet](https://cdn.sparkfun.com/assets/learn_tutorials/2/7/4/Si4703_datasheet.pdf) |
@@ -33,6 +35,15 @@ Jednoduchý přijímač FM stanic řízený mikrokontrolérem RPi Pico W
 ## Základní popis fungování
 
 ## I/O sekce
+
+
+## Použité knihovny
+| Knihovna | Odkazy |
+| :-----: | :---: |
+| machine | [Odkaz](https://docs.micropython.org/en/latest/library/machine.html) |
+| time | [Odkaz](https://docs.micropython.org/en/latest/library/time.html) |
+| framebuf | [Odkaz](https://docs.micropython.org/en/latest/library/framebuf.html) |
+
 
 ## Použité zdroje
 | Odkaz |
