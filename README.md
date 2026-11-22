@@ -22,6 +22,14 @@ Jednoduchý přijímač FM stanic řízený mikrokontrolérem RPi Pico W
 
 ## Hardware
 
+| Součástka | Model | Odkazy |
+|:-----:|-----| :---: |
+| Mikrokontrolér | Raspberry Pi Pico W | [Odkaz na datasheet](https://pip-assets.raspberrypi.com/categories/686-raspberry-pi-pico-w/documents/RP-008312-DS-3-pico-w-datasheet.pdf) |
+| Rotační enkodér | Okystar KY-040 | [Odkaz na datasheet](https://okystar.com/wp-content/uploads/2017/08/OKY3431.pdf) |
+| FM tuner | Si4703 | [Odkaz na datasheet](https://cdn.sparkfun.com/assets/learn_tutorials/2/7/4/Si4703_datasheet.pdf) |
+| LCD displej | Displej z Nokia 5110 | [Odkaz na datasheet řadiče PCD8544](https://cdn.sparkfun.com/assets/b/1/b/e/f/Nokia5110.pdf) |
+
+
 Rotační enkodér:
 Okystar KY-040
 https://botland.store/encoders/16558-rotation-sensor-encoder-20-pulses-okystar-ky-040-5904422366278.html
