@@ -60,12 +60,14 @@ Jedná se o frekvenčně modulovaný (FM) rozhlasový přijímač, pracující n
 
 
 ## Základní popis fungování
-Rozhlasový přijímač je vybarven LCD displejem a ovládá se pomocí rotačního enkodéru. Stiskem enkodéru se můžeme přepínat mez dvěma režimy. Prvním z nich je regulace hlasitosti, druhým změna frekvence (s krokem 0,1 MHz). Na displeji se zobrazuje od shora dolů:
+Rozhlasový přijímač je vybaven LCD displejem a ovládá se pomocí rotačního enkodéru. Stiskem enkodéru je možné přepínat mezi dvěma režimy. Prvním z nich je regulace hlasitosti, druhým změna frekvence (s krokem 0,1 MHz). Na displeji se zobrazuje od shora dolů:
 - hlasitost
 - frekvence (MHz)
 - doplňkové informace (RDS) – střídavě název stanice a radiotext
 
 Audio výstup přijímače je řešen pomocí konektoru Jack 3,5 mm, přičemž kabel připojeného zařízení slouží současně jako anténa. K napájení celého zařízení slouží micro USB B kabel připojený do Raspberry Pi Pico, ze kterého jsou následně napájeny i ostatní moduly.
+
+Hlavní soubor skriptu (main.py) na začátku běhu inicializuje drivery FM přijímače a displeje. Poté se nastaví přerušení pro rotační enkodér a časovač, který pravidelně mění na displeji název stanice a radiotext. Hlavní smyčka programu pak zpracovává data v RDS, přepisuje informace na displeji a mění nastavení přijímače podle vstupu uživatele.
 
 
 ## Použité knihovny
