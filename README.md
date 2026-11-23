@@ -9,9 +9,9 @@ Jedná se o frekvenčně modulovaný (FM) rozhlasový přijímač, pracující n
 ## Obsah
 - [Blokové schéma](#Blokové-schéma)
 - [Schéma](#Schéma)
+- [I/O sekce](#IO-sekce)
 - [Hardware](#Hardware)
 - [Základní popis fungování](#Základní-popis-fungování)
-- [I/O sekce](#IO-sekce)
 - [Použité knihovny](#Použité-knihovny)
 - [Použité zdroje](#Použité-zdroje)
 
@@ -21,11 +21,38 @@ Jedná se o frekvenčně modulovaný (FM) rozhlasový přijímač, pracující n
 ## Schéma
 ![Image of schematic](https://github.com/M1chael02/DE2_Projekt-FM_Receiver/blob/main/images/schematic.png)
 
+## I/O sekce
+
+### Si4703
+| Pin modulu | GPIO pin RPi |
+| :-----:| :---: |
+| SDIO | GPIO18 |
+| SCLK | GPIO19 |
+| RST | GPIO6 |
+| GPIO2 | GPIO5 |
+
+
+### Nokia 5110 displej
+| Pin modulu | GPIO pin RPi |
+| :-----:| :---: |
+| RST | GPIO4 |
+| CE | GPIO13 |
+| DC | GPIO3 |
+| DIN | GPIO11 |
+| CLK | GPIO10 |
+
+
+### Rotační enkodér
+| Pin modulu | GPIO pin RPi |
+| :-----:| :---: |
+| S1 | GPIO2 |
+| A | GPIO15 |
+| B | GPIO14 |
 
 ## Hardware
 
 | Součástka | Model | Odkazy |
-| :-----:|-----| :---: |
+| :-----:|:-----:| :---: |
 | Mikrokontrolér | Raspberry Pi Pico W | [Odkaz na datasheet](https://pip-assets.raspberrypi.com/categories/686-raspberry-pi-pico-w/documents/RP-008312-DS-3-pico-w-datasheet.pdf) |
 | Rotační enkodér | Okystar KY-040 | [Odkaz na datasheet](https://okystar.com/wp-content/uploads/2017/08/OKY3431.pdf) |
 | FM tuner | Si4703 | [Odkaz na datasheet](https://cdn.sparkfun.com/assets/learn_tutorials/2/7/4/Si4703_datasheet.pdf) |
@@ -39,9 +66,6 @@ Rozhlasový přijímač je vybarven LCD displejem a ovládá se pomocí rotačn�
 - doplňkové informace (RDS) – střídavě název stanice a radiotext
 
 Audio výstup přijímače je řešen pomocí konektoru Jack 3,5 mm, přičemž kabel připojeného zařízení slouží současně jako anténa. K napájení celého zařízení slouží micro USB B kabel připojený do Raspberry Pi Pico, ze kterého jsou následně napájeny i ostatní moduly.
-
-
-## I/O sekce
 
 
 ## Použité knihovny
