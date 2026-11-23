@@ -6,6 +6,26 @@ Jedná se o frekvenčně modulovaný (FM) rozhlasový přijímač, pracující n
 - Michael Jurča - FM Tuner
 - Denis Kaňovský - Integrace rotačního enkodéru
 
+## Struktura repozitáře
+```
+.
+├── images
+│   ├── blok_FM.png
+│   └── schematic.png
+├── Production
+│   └── main.py
+├── README.md
+└── Testing
+    ├── Display
+    │   ├── display.py
+    │   └── main.py
+    ├── Encoder
+    │   └── test_enkoder.py
+    └── FM_Receiver
+        ├── fm_receiver.py
+        └── main.py
+```
+
 ## Obsah
 - [Blokové schéma](#Blokové-schéma)
 - [Schéma](#Schéma)
