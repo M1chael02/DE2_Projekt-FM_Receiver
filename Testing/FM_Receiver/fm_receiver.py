@@ -160,6 +160,17 @@ def set_mono(state=True):
     r[0x02] = (r[0x02] | _MONO) if state else (r[0x02] & ~_MONO)
     _write(r)
 
+def get_status():
+    r = _read()
+    s = r[0x0A]
+    return {
+        "freq": get_freq(),
+        "rssi": s & 0xFF,
+        "stereo": bool(s & _ST),
+        "rds_sync": bool(s & _RDSS),
+        "volume": r[0x05] & 0xF,
+    }
+
 def scan_band(min_rssi=15):
     """Tune across the whole band; returns [(freq, rssi), ...] above min_rssi."""
     found = []
