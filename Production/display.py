@@ -29,8 +29,8 @@ class LCD(framebuf.FrameBuffer):
     def __init__(self):
         self.spi = SPI(1, baudrate=4_000_000, sck=Pin(10), mosi=Pin(11))
         self.ce = Pin(13, Pin.OUT, value=1)
-        self.dc = Pin(4, Pin.OUT)
-        rst = Pin(3, Pin.OUT)
+        self.dc = Pin(3, Pin.OUT)
+        rst = Pin(4, Pin.OUT)
         self.buf = bytearray(84 * 48 // 8)
         super().__init__(self.buf, 84, 48, framebuf.MONO_VLSB)
         rst(0); sleep_ms(10); rst(1)                               # hardware reset

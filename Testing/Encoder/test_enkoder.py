@@ -2,9 +2,9 @@ from machine import Pin
 import time
 
 # GPIO pin definitions (adjust to match your wiring)
-PIN_CLK = 2
-PIN_DT  = 19
-PIN_SW  = 20
+PIN_CLK = 15
+PIN_DT  = 14
+PIN_SW  = 2
 
 # Initialize inputs with internal pull-up resistors
 clk = Pin(PIN_CLK, Pin.IN, Pin.PULL_UP)
